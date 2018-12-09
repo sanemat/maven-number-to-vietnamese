@@ -52,16 +52,3 @@ uploadArchives {
 repositories {
     mavenCentral()
 }
-bintray {
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_KEY')
-    pkg {
-        repo = 'maven'
-        name = 'number-to-vietnamese'
-        licenses = ['MIT']
-        vcsUrl = 'https://github.com/sanemat/maven-number-to-vietnamese'
-        version {
-            name = '0.1.0'
-        }
-    }
-}
