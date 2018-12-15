@@ -14,7 +14,7 @@ jobs:
           key: jars-{{ checksum "build.gradle.kts" }}
       - run:
           name: Run Tests
-          command: ./gradlew ckeck test
+          command: ./gradlew check test
       - store_artifacts:
           path: build/reports
           destination: reports
