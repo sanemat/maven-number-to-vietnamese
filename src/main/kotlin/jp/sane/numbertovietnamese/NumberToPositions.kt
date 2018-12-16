@@ -1,6 +1,10 @@
 package jp.sane.numbertovietnamese
 
+@Throws(NotImplementedError::class)
 fun numberToPositions (num: Int) : Array<Int> {
+    if ( num < 0 ) {
+        throw NotImplementedError("unknown: $num")
+    }
     val quot = num / 10
     val rem = num % 10
     return when {

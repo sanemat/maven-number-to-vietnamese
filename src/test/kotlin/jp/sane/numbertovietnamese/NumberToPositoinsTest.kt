@@ -1,6 +1,7 @@
 package jp.sane.numbertovietnamese
 
 import kotlin.test.Test
+import kotlin.test.assertFailsWith
 
 class NumberToPositionsTest {
     @Test
@@ -22,5 +23,11 @@ class NumberToPositionsTest {
     @Test
     fun num1192() {
         assert(arrayOf(1, 1, 9, 2).contentEquals(numberToPositions(1192)))
+    }
+    @Test
+    fun num_minus_1() {
+        assertFailsWith<NotImplementedError> {
+            numberToPositions(-1)
+        }
     }
 }
