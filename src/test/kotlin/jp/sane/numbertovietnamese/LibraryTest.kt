@@ -4,11 +4,11 @@
 package jp.sane.numbertovietnamese
 
 import kotlin.test.Test
-import kotlin.test.assertTrue
+import kotlin.test.assertSame
 
 class LibraryTest {
     @Test fun testSomeLibraryMethod() {
         val classUnderTest = Library()
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'")
+        assertSame(true, classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'")
     }
 }
