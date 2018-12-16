@@ -7,6 +7,7 @@
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM
     id("org.jetbrains.kotlin.jvm").version("1.3.10")
+    `maven-publish`
 }
 
 repositories {
@@ -24,4 +25,16 @@ dependencies {
 
     // Use the Kotlin JUnit integration
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "jp.sane.numbertovietnamese"
+            artifactId = "numbertovietnamese"
+            version = "0.2.0"
+
+            from(components["java"])
+        }
+    }
 }
