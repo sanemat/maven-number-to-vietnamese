@@ -1,8 +1,7 @@
 package jp.sane.numbertovietnamese
 
-import org.junit.Test
-
-import org.junit.Assert.*
+import kotlin.test.Test
+import kotlin.test.assertEquals
 
 /**
  * Vietnamese numbers https://www.omniglot.com/language/numbers/vietnamese.htm

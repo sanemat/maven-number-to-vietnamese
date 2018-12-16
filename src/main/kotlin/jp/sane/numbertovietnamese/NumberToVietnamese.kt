@@ -3,8 +3,8 @@ package jp.sane.numbertovietnamese
 @Throws(NotImplementedError::class)
 fun numberToVietnamese(num: Int) : String {
     val normalNumbers = arrayOf(
-        "không", "một", "hai", "ba", "bốn",
-        "năm", "sáu", "bảy", "tám", "chín"
+            "không", "một", "hai", "ba", "bốn",
+            "năm", "sáu", "bảy", "tám", "chín"
     )
     // north: linh, south: lẻ
     val ten = "mười"
@@ -51,8 +51,8 @@ fun withoutPrefix(hundredsPosition: Int, tensPosition: Int, onesPosition: Int) :
         return null
     }
     val normalNumbers = arrayOf(
-        "không", "một", "hai", "ba", "bốn",
-        "năm", "sáu", "bảy", "tám", "chín"
+            "không", "một", "hai", "ba", "bốn",
+            "năm", "sáu", "bảy", "tám", "chín"
     )
     val ten = "mười"
     val specialTen = "mươi"
