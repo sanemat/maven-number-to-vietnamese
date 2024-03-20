@@ -39,3 +39,11 @@ publishing {
         }
     }
 }
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    kotlinOptions {
+        jvmTarget = "11" // Target JVM 17
+        languageVersion = "1.7" // Ensure compatibility with Kotlin 1.7 features
+        apiVersion = "1.7" // Use the Kotlin 1.7 API
+    }
+}
