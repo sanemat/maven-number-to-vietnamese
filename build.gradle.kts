@@ -6,14 +6,12 @@
 
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM
-    id("org.jetbrains.kotlin.jvm").version("1.3.10")
-    `maven-publish`
+    id("org.jetbrains.kotlin.jvm") version "1.9.23"
+    id("maven-publish")
 }
 
 repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -27,14 +25,17 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
 
+group = "com.github.sanemat"
+version = "0.4.0" // Use git tags for versioning
+
 publishing {
     publications {
-        create<MavenPublication>("maven") {
-            groupId = "jp.sane.numbertovietnamese"
-            artifactId = "numbertovietnamese"
-            version = "0.3.0"
+        create<MavenPublication>("mavenKotlin") {
+            from(components["kotlin"])
 
-            from(components["java"])
+            groupId = group.toString()
+            artifactId = "maven-number-to-vietnamese"
+            version = version.toString()
         }
     }
 }
