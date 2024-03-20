@@ -34,7 +34,7 @@ publishing {
             from(components["kotlin"])
 
             groupId = group.toString()
-            artifactId = "numbertovietnamese"
+            artifactId = "maven-number-to-vietnamese"
             version = version.toString()
         }
     }
