@@ -1,3 +1,10 @@
+<a name="0.4.0"></a>
+## 0.4.0 (2024-03-20)
+
+- Upgrade dependencies
+- Migrate to jitpack
+
+
 <a name="0.3.0"></a>
 ## 0.3.0 (2018-12-16)
 
