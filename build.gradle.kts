@@ -11,8 +11,6 @@ plugins {
 }
 
 repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
     mavenCentral()
 }
 
@@ -27,14 +25,17 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
 
+group = "com.github.sanemat"
+version = "0.4.0" // Use git tags for versioning
+
 publishing {
     publications {
-        create<MavenPublication>("maven") {
-            groupId = "jp.sane.numbertovietnamese"
-            artifactId = "numbertovietnamese"
-            version = "0.3.0"
+        create<MavenPublication>("mavenKotlin") {
+            from(components["kotlin"])
 
-            from(components["java"])
+            groupId = group.toString()
+            artifactId = "numbertovietnamese"
+            version = version.toString()
         }
     }
 }
