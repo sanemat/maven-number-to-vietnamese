@@ -15,8 +15,8 @@ repositories {
 }
 
 dependencies {
-    // Use the Kotlin JDK 8 standard library
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    // Use the Kotlin standard library (consolidated since 1.8.0)
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
     // Use the Kotlin test library
     testImplementation("org.jetbrains.kotlin:kotlin-test")
