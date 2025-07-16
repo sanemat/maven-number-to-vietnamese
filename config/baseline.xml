@@ -3,7 +3,6 @@
   <ManuallySuppressedIssues/>
   <CurrentIssues>
     <ID>CyclomaticComplexMethod:NumberForVietnamese.kt$fun withoutPrefix(hundredsPosition: Int, tensPosition: Int, onesPosition: Int) : String?</ID>
-    <ID>Filename:NumberToPositoinsTest.kt$jp.sane.numbertovietnamese.NumberToPositoinsTest.kt</ID>
     <ID>FunctionReturnTypeSpacing:NumberForVietnamese.kt$NumberForVietnamese$@Throws(NotImplementedError::class) fun toVietnamese() : String</ID>
     <ID>FunctionReturnTypeSpacing:NumberForVietnamese.kt$NumberForVietnamese.Companion$fun from(num : Int) : NumberForVietnamese</ID>
     <ID>FunctionReturnTypeSpacing:NumberForVietnamese.kt$fun withoutPrefix(hundredsPosition: Int, tensPosition: Int, onesPosition: Int) : String?</ID>
@@ -13,7 +12,6 @@
     <ID>MagicNumber:NumberForVietnamese.kt$9</ID>
     <ID>MagicNumber:NumberForVietnamese.kt$NumberForVietnamese$3</ID>
     <ID>MagicNumber:NumberToPositions.kt$10</ID>
-    <ID>MatchingDeclarationName:NumberToPositoinsTest.kt$NumberToPositionsTest</ID>
     <ID>SpacingBetweenFunctionNameAndOpeningParenthesis:NumberToPositions.kt$@Throws(NotImplementedError::class) fun numberToPositions (num: Int) : IntArray</ID>
     <ID>SpreadOperator:NumberToPositions.kt$(*numberToPositions(quot), rem)</ID>
   </CurrentIssues>
