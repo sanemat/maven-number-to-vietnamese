@@ -1,3 +1,11 @@
+<a name="0.5.1"></a>
+## 0.5.1 (2025-07-19)
+
+- Code quality improvements and formatting fixes
+- Internal implementation optimizations
+- Updated dependencies (Kotlin 2.2.0, Gradle 8.14.3)
+- Added detekt linter for code quality
+
 <a name="0.5.0"></a>
 ## 0.5.0 (2024-03-20)
 
