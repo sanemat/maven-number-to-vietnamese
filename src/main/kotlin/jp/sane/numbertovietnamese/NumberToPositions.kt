@@ -1,7 +1,7 @@
 package jp.sane.numbertovietnamese
 
 @Throws(NotImplementedError::class)
-fun numberToPositions (num: Int) : IntArray {
+fun numberToPositions(num: Int): IntArray {
     if ( num < 0 ) {
         throw NotImplementedError("unknown: $num")
     }
