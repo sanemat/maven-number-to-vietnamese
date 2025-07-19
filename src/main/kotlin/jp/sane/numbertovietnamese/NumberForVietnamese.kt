@@ -2,13 +2,13 @@ package jp.sane.numbertovietnamese
 
 class NumberForVietnamese(val nums: IntArray) {
     companion object {
-        fun from(num : Int) : NumberForVietnamese {
+        fun from(num: Int): NumberForVietnamese {
             return NumberForVietnamese(numberToPositions(num))
         }
     }
 
     @Throws(NotImplementedError::class)
-    fun toVietnamese() : String {
+    fun toVietnamese(): String {
         val normalNumbers = arrayOf(
                 "không", "một", "hai", "ba", "bốn",
                 "năm", "sáu", "bảy", "tám", "chín"
@@ -28,7 +28,7 @@ class NumberForVietnamese(val nums: IntArray) {
     }
 }
 
-fun withoutPrefix(hundredsPosition: Int, tensPosition: Int, onesPosition: Int) : String? {
+fun withoutPrefix(hundredsPosition: Int, tensPosition: Int, onesPosition: Int): String? {
     if (hundredsPosition == 0 && tensPosition == 0 && onesPosition == 0) {
         return null
     }
