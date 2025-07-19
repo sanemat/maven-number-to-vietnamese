@@ -10,6 +10,6 @@ fun numberToPositions(num: Int): IntArray {
     return when {
         quot == 0 -> intArrayOf(rem)
         quot < 10 -> intArrayOf(quot, rem)
-        else -> intArrayOf(*numberToPositions(quot), rem)
+        else -> numberToPositions(quot) + intArrayOf(rem)
     }
 }

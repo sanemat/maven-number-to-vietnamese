@@ -30,4 +30,19 @@ class NumberToPositionsTest {
             numberToPositions(-1)
         }
     }
+    
+    @Test
+    fun num123() {
+        assert(intArrayOf(1, 2, 3).contentEquals(numberToPositions(123)))
+    }
+    
+    @Test
+    fun num1000() {
+        assert(intArrayOf(1, 0, 0, 0).contentEquals(numberToPositions(1000)))
+    }
+    
+    @Test
+    fun num999() {
+        assert(intArrayOf(9, 9, 9).contentEquals(numberToPositions(999)))
+    }
 }
