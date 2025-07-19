@@ -2,12 +2,12 @@
 <SmellBaseline>
   <ManuallySuppressedIssues/>
   <CurrentIssues>
-    <ID>CyclomaticComplexMethod:NumberForVietnamese.kt$fun withoutPrefix(hundredsPosition: Int, tensPosition: Int, onesPosition: Int) : String?</ID>
+    <ID>CyclomaticComplexMethod:NumberForVietnamese.kt$fun withoutPrefix(hundredsPosition: Int, tensPosition: Int, onesPosition: Int): String?</ID>
     <ID>MagicNumber:NumberForVietnamese.kt$5</ID>
     <ID>MagicNumber:NumberForVietnamese.kt$9</ID>
     <ID>MagicNumber:NumberForVietnamese.kt$NumberForVietnamese$3</ID>
     <ID>MagicNumber:NumberToPositions.kt$10</ID>
-    <ID>SpacingBetweenFunctionNameAndOpeningParenthesis:NumberToPositions.kt$@Throws(NotImplementedError::class) fun numberToPositions (num: Int) : IntArray</ID>
+    <ID>SpacingBetweenFunctionNameAndOpeningParenthesis:NumberToPositions.kt$@Throws(NotImplementedError::class) fun numberToPositions(num: Int): IntArray</ID>
     <ID>SpreadOperator:NumberToPositions.kt$(*numberToPositions(quot), rem)</ID>
   </CurrentIssues>
 </SmellBaseline>
