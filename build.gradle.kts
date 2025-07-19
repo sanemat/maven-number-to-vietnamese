@@ -30,7 +30,7 @@ dependencies {
 }
 
 group = "com.github.sanemat"
-version = "0.5.0" // Use git tags for versioning
+version = "0.5.1" // Use git tags for versioning
 
 publishing {
     publications {
